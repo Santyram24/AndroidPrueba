@@ -17,22 +17,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et1= (EditText)findViewById(R.id.txt_num1);
-        et2=(EditText) findViewById(R.id.txt_num2);
-        tv1=(TextView) findViewById(R.id.txt_resul);
+        et1 = (EditText) findViewById(R.id.txt_num1);
+        et2 = (EditText) findViewById(R.id.txt_num2);
+        tv1 = (TextView) findViewById(R.id.txt_resul);
 
     }
 
     //Este metodo realiza la suma
-    public void sumar(View view){
-        String valor1= String.valueOf(et1.getText());
-        String valor2= String.valueOf(et2.getText());
+    public void sumar(View view) {
+        String valor1 = String.valueOf(et1.getText());
+        String valor2 = String.valueOf(et2.getText());
 
-        int num1= Integer.parseInt(valor1);
-        int num2= Integer.parseInt(valor2);
-        int suma=num1+num2;
+        int num1 = Integer.parseInt(valor1);
+        int num2 = Integer.parseInt(valor2);
+        int suma = num1 + num2;
 
-        String resultado= String.valueOf(suma);
+        String resultado = String.valueOf(suma);
         tv1.setText(resultado);
     }
 }
